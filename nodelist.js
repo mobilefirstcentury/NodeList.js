@@ -1,4 +1,10 @@
 (function(window){
+  // [TODO] investigate further on best design pattern to have a node module loadable in browser through normal script tag
+  // We want nodelist to be usable both as a normal node module and as a normal javascript loadable in the browser
+  // here i have naively implemented [design pattern used by jquery](http://stackoverflow.com/questions/3225251/how-can-i-share-code-between-node-js-and-the-browser/23750731#23750731)
+  // Is [this solution](http://caolan.org/posts/writing_for_node_and_the_browser/) better
+  // don't forget that the problem is rendered more complex as we want nodelist to be usable on server-side through jsdom
+  // it currently works with 'domify' MFC module
 
   var implementation = function(window) {
     var ArrayProto = Array.prototype, nodeError = new Error( 'Passed arguments must be of Node' ), NL, div, prop;
