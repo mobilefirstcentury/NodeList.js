@@ -1,4 +1,4 @@
-( function() {
+module.exports = function(root) {
 	var ArrayProto = Array.prototype, nodeError = new Error( 'Passed arguments must be of Node' ), NL, div, prop;
 	function flatten( arr, owner ) {
 		var elms = [], i = 0, l = arr.length, i2, l2, el;
@@ -199,4 +199,4 @@
 		return new NodeList( arguments );
 	}
 	window.$$.NL = NL;
-})();
+}

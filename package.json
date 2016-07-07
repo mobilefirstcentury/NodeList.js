@@ -1,0 +1,12 @@
+{
+  "name": "nodelist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rachid Bouchioua <rachidbch@gmail.com> (http://mobilefirstcentury.com)",
+  "license": "ISC"
+}
