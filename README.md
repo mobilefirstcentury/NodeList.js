@@ -1,5 +1,14 @@
 # Overview
 
+
+## why this fork?
+`eorroe/NodeList.js` is designed to be run in the browser. 
+With server-side dom rendering becoming mainstream a lightweight dom manipulation library available as a node module would be great.
+Unfortunately, eorroe is not sold to this idea.
+
+This is an experiment in providing all the good work of eorroe in an isomorphic and functionnal programming way.
+
+
 ## What this is:
 
 `NodeList.js` makes using the **Native DOM APIs** on an `Array` of `Nodes` as easy as `jQuery` with the benefits of it being extremely small at around **4k minified**, and the browser as a dependency **(That's the most interesting part)**.
